@@ -1,0 +1,113 @@
+.username {
+    padding: 20px;
+
+    border: 2px solid gray;
+    border-radius: 2px;
+
+
+    width: 90%;
+
+
+}
+
+.username input {
+    border: none;
+    outline: none;
+    padding: 1px;
+}
+
+.Password {
+    padding: 20px;
+
+    border: 2px solid grey;
+    border-radius: 2px;
+    width: 90%;
+    
+
+}
+
+.Password input {
+    border: none;
+    outline: none;
+    padding: 1px;
+}
+
+.signinbutton button {
+    display: flex;
+    width: 100%;
+    background-color: green;
+    justify-content: center;
+    line-height: 40px;
+    padding: 2px 20px;
+    color: white;
+    font-size: larger;
+}
+
+.or {
+    padding: 10px;
+    border-top: 1px solid gray;
+    text-align: center;
+}
+
+.remind {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+.container {
+    width: 500px;
+    border: 1px solid black;
+  
+}
+
+.icon {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 10px;
+    max-width:  300px;
+    margin: auto;
+}
+
+.icon button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border: none;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.icon button i {
+    margin-right: 8px;
+    font-size: 20px;
+}
+ a{
+    color: green;
+}
+.A{
+    text-align: center;
+}
+.icon .Google{
+    color: white;
+    background-color: red;
+    
+}
+.icon .Facebook{
+    color: white;
+    background-color: blue;   
+}
+.icon .linkedin{
+    color: white;
+    background-color: blue;
+}
+.icon .Github{
+    color: white;
+    background-color: black;
+}
