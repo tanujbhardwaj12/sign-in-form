@@ -1,9 +1,19 @@
+
+
+body{
+    display: flex;
+    gap: 2px;
+    margin: 20px 30px;
+    background-color:#f4f4f4;;
+ 
+ 
+
+}
 .username {
     padding: 20px;
 
     border: 2px solid gray;
     border-radius: 2px;
-
 
     width: 90%;
 
@@ -20,7 +30,6 @@
     padding: 20px;
 
     border: 2px solid grey;
-    border-radius: 2px;
     width: 90%;
     
 
@@ -59,10 +68,11 @@
 
 .container {
     width: 500px;
-    border: 1px solid black;
+    
+
   
 }
-
+ 
 .icon {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -110,4 +120,73 @@
 .icon .Github{
     color: white;
     background-color: black;
+}
+
+.EMAIL{
+   display: block;
+   margin-block-start: 1em;
+   margin-block-end: 1em;
+   margin-inline-start: 0px;
+   margin-inline-end: 0px;
+  
+   
+}
+.Form input{
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    padding: 0px;
+}
+.Submit{
+    color: #f0f0f0;
+    
+}
+.Submit input{
+    background-color: #e3b04b;
+    font-size:small;
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+}   
+
+.main{
+    display: flex;
+}
+.main .ADDRESS{
+    padding-top: 35px;
+}
+.p-detail{
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    gap: 20px;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.container2{
+    border: 2px solid white;
+
+   background-color: white;
+    width: 800px;
+    padding: 15px 15px;
+    padding: 1.5rem !important;
+}
+
+
+a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.2);
+
+}
+a:hover{
+    color: black;
+
+}
+
+
+.ADDRESS{
+    display: block;}
+    .main span{
+    color: rgba(0, 0, 0, 0.2);
 }
