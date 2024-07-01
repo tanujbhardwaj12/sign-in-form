@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolute Position Example</title>
+    <style>
+      .container {
+        border: 1px solid black;
+        height: 200px;
+        width: 60%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        background-color: yellow;
+
+
+        ;
+      }
+
+      .div1 {
+        background-color: blue;
+        width: 100px;
+        height: 50px;
+        margin: 10px;
+
+
+      }
+
+      .div2 {
+        background-color: blueviolet;
+        width: 100px;
+        height: 50px;
+        margin: 10px;
+        position: relative;
+        bottom: 50px;
+        z-index: 1;
+      }
+
+      .div3 {
+        background-color: brown;
+        width: 100px;
+        height: 50px;
+        margin: 10px;
+      }
+
+      @media only screen and (min-width: 500px) {
+        .container {
+          display: block;
+          background-color: red;
+        }
+      }
+
+      footer {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        position: relative;
+        border: 2px solid black;
+        background-color: cornflowerblue;
+        top: 174px;
+        left: 89px;
+      }
+
+      footer::before {
+        content: "";
+        position: absolute;
+        border: 2px solid black;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        left: 16px;
+        top: 25px;
+        background-color: black;
+      }
+
+      footer::after {
+        content: "";
+        position: absolute;
+        border: 2px solid black;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        left: 72px;
+        top: 26px;
+        background-color: black;
+      }
+
+      .circle1 {
+        position: absolute;
+        bottom: 20px;
+        /* right: 1px; */
+        left: -13px;
+        width: 120px;
+        height: 100px;
+        border: 2px solid #000;
+        border-color: #000 transparent transparent transparent;
+        border-radius: 50%/100px 100px 0 0;
+        transform: rotate(180deg);
+
+      }
+
+      section {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        top: 50px;
+        position: relative;
+        border: 2px solid black;
+        background-color: cornflowerblue;
+        left: 229px;
+      }
+
+      section::before {
+        content: "";
+        position: absolute;
+        border: 2px solid black;
+        border-radius: 50%;
+        width: 40px;
+        height: 41px;
+        left: 116px;
+        top: -9px;
+        background-color: cornflowerblue;
+
+      }
+
+      section::after {
+        content: "";
+        position: absolute;
+        border: 2px solid black;
+        border-radius: 50%;
+        width: 27px;
+        height: 28px;
+        left: 186px;
+        top: -23px;
+        background-color: cornflowerblue;
+      }
+    </style>
+
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="div1">1</div>
+      <div class="div2">2</div>
+      <div class="div3">3</div>
+    </div>
+
+    <footer>
+      <div class="circle1"></div>
+    </footer>
+    <section>
+      <div class="circle2"></div>
+    </section>
+  </body>
+
+  </html>
